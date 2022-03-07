@@ -12,6 +12,10 @@ export const GithubProvider = ({ children }) => {
   const [state, dispatch] = useReducer(githubReducer, initialState);
 
   const setLoading = () => dispatch({ type: 'SET_LOADING' });
+
+  // CLEAR ALL USERS
+  const clearUsers = () => dispatch({ type: 'CLEAR', payload: [] });
+
   // == Get initial users [testing purposes] == //
   // const fetchUsers = async () => {
 
@@ -49,7 +53,9 @@ export const GithubProvider = ({ children }) => {
   };
 
   return (
-    <GithubContext.Provider value={{ users: state.users, loading: state.loading, searchUsers }}>
+    <GithubContext.Provider
+      value={{ users: state.users, loading: state.loading, searchUsers, clearUsers }}
+    >
       {children}
     </GithubContext.Provider>
   );
