@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { GithubProvider } from './context/github/GithubContext';
-import { AlertProvider } from './context/github/alert/AlertContex';
+import { AlertProvider } from './context/alert/AlertContex';
 import Footer from './components/layout/Footer';
 import Navbar from './components/layout/Navbar';
 import Alert from './components/layout/Alert';
