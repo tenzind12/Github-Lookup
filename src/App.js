@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { GithubProvider } from './context/github/GithubContext';
 import { AlertProvider } from './context/alert/AlertContex';
 import Footer from './components/layout/Footer';
@@ -13,7 +13,7 @@ function App() {
   return (
     <GithubProvider>
       <AlertProvider>
-        <Router>
+        <HashRouter>
           <div className="flex flex-col justify-between h-screen">
             <Navbar />
             <main className="container mx-auto px-3 pb-12">
@@ -28,7 +28,7 @@ function App() {
             </main>
             <Footer />
           </div>
-        </Router>
+        </HashRouter>
       </AlertProvider>
     </GithubProvider>
   );
