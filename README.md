@@ -1,4 +1,4 @@
-# A [github looker](https://githublookup.tenzin.eu) project
+# A [github lookup](https://githublookup.tenzin.eu) project
 
 The project uses Tailwind CSS and DaisyUI for the UI  
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
